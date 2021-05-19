@@ -18,25 +18,26 @@
     }
 
     &__list-link {
-        padding-bottom: 2px;
+        padding-bottom: 0 2px 1px;
         text-transform: uppercase;
         color: $title;
         transition: all 0.3s;
-        @extend %quicksand-400;
 
         &:hover {
             border-bottom: 1px solid $accent;
             color: $accent;
-            
-        @extend %quicksand-500;
+
+            @extend %roboto-700;
         }
+
+        @extend %roboto-400;
     }
 
     &__list-link--active {
         border-bottom: 1px solid $accent;
         color: $accent;
-        
-        @extend %quicksand-500;
+
+        @extend %roboto-700;
     }
 }
 
