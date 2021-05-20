@@ -1,69 +1,69 @@
 .header {
-    padding: 40px 0;
+  padding: 40px 0;
 
-    &__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .menu {
-    &__list {
-        display: flex;
+  &__list {
+    display: flex;
+  }
+
+  &__list-item + .menu__list-item {
+    padding-left: 35px;
+  }
+
+  &__list-link {
+    padding-bottom: 0 2px 1px;
+    text-transform: uppercase;
+    color: $title;
+    transition: all 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid $accent;
+      color: $accent;
+
+      @extend %roboto-700;
     }
 
-    &__list-item + .menu__list-item {
-        padding-left: 35px;
-    }
+    @extend %roboto-400;
+  }
 
-    &__list-link {
-        padding-bottom: 0 2px 1px;
-        text-transform: uppercase;
-        color: $title;
-        transition: all 0.3s;
+  &__list-link--active {
+    border-bottom: 1px solid $accent;
+    color: $accent;
 
-        &:hover {
-            border-bottom: 1px solid $accent;
-            color: $accent;
-
-            @extend %roboto-700;
-        }
-
-        @extend %roboto-400;
-    }
-
-    &__list-link--active {
-        border-bottom: 1px solid $accent;
-        color: $accent;
-
-        @extend %roboto-700;
-    }
+    @extend %roboto-700;
+  }
 }
 
 .user-nav {
-    display: flex;
+  display: flex;
 
-    &__link {
-        position: relative;
-    }
+  &__link {
+    position: relative;
+  }
 
-    &__link + .user-nav__link {
-        padding-left: 25px;
-    }
+  &__link + .user-nav__link {
+    padding-left: 25px;
+  }
 
-    &__num {
-        position: absolute;
-        right: -14px;
-        top: -10px;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        font-size: 12px;
-        line-height: 20px;
-        text-align: center;
-        color: #fff;
-        background-color: $accent;
-    }
+  &__num {
+    position: absolute;
+    right: -14px;
+    top: -10px;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: $accent;
+  }
 }
