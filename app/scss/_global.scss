@@ -32,17 +32,18 @@ a {
 }
 
 .title {
-  @extend %roboto-700;
+  margin-bottom: 10px;
   font-size: 48px;
   line-height: 65px;
-  color: $title;
-  margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+  color: $title;
+
+  @extend %roboto-700;
 }
 
 .text {
-  text-align: center;
-  max-width: 570px;
   margin: 0 auto 55px;
+  max-width: 570px;
+  text-align: center;
 }
