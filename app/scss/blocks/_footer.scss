@@ -1,112 +1,112 @@
 footer {
-    background-color: $bg;
+  background-color: $bg;
 }
 
 .footer-top {
+  display: flex;
+  padding: 70px 0 40px;
+  border-bottom: 1px solid #ececec;
+
+  &__contact {
+    margin-right: 50px;
+    width: 250px;
+  }
+
+  &__nav {
+    margin-right: 30px;
+    width: 170px;
+  }
+
+  &__item-form {
+    max-width: 470px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 33px;
+  }
+
+  &__social-list {
     display: flex;
-    padding: 70px 0 40px;
-    border-bottom: 1px solid #ececec;
+    align-items: center;
+    margin-top: 30px;
+  }
 
-    &__contact {
-        margin-right: 50px;
-        width: 250px;
+  &__social-item + .footer-top__social-item {
+    padding-left: 18px;
+  }
+
+  &__social-link {
+    transition: all 0.3s;
+
+    path {
+      fill: $default;
     }
 
-    &__nav {
-        margin-right: 30px;
-        width: 170px;
+    &:hover {
+      path {
+        fill: $accent;
+      }
     }
+  }
 
-    &__item-form {
-        max-width: 470px;
+  &__title {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 1;
+    color: $title;
+
+    @extend %roboto-400;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__form-input {
+    padding: 12px 10px 12px 15px;
+    width: 100%;
+    max-width: 320px;
+    border: none;
+    box-shadow: 0 7px 20px 0 rgba(192, 192, 192, 0.3);
+    background-color: #fff;
+
+    &::placeholder {
+      font-size: 16px;
+      color: $default;
     }
+  }
 
-    &__logo {
-        display: block;
-        margin-bottom: 33px;
-    }
+  &__form-btn {
+    border: none;
+    cursor: pointer;
 
-    &__social-list {
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-    }
+    @extend %btn;
+  }
 
-    &__social-item + .footer-top__social-item {
-        padding-left: 18px;
-    }
-
-    &__social-link {
-        transition: all 0.3s;
-
-        path {
-            fill: $default;
-        }
-
-        &:hover {
-            path {
-                fill: $accent;
-            }
-        }
-    }
-
-    &__title {
-        margin-bottom: 40px;
-        font-size: 22px;
-        line-height: 1;
-        color: $title;
-
-        @extend %roboto-400;
-    }
-
-    &__link {
-        display: block;
-        margin-bottom: 12px;
-    }
-
-    &__text {
-        margin-bottom: 25px;
-    }
-
-    &__form-input {
-        padding: 12px 10px 12px 15px;
-        width: 100%;
-        max-width: 320px;
-        border: none;
-        box-shadow: 0 7px 20px 0 rgba(192, 192, 192, 0.3);
-        background-color: #fff;
-
-        &::placeholder {
-            font-size: 16px;
-            color: $default;
-        }
-    }
-
-    &__form-btn {
-        border: none;
-        cursor: pointer;
-
-        @extend %btn;
-    }
-
-    &__address,
-    &__email,
-    &__phone {
-        display: block;
-        margin-bottom: 12px;
-    }
+  &__address,
+  &__email,
+  &__phone {
+    display: block;
+    margin-bottom: 12px;
+  }
 }
 
 .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 75px;
-    font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  font-size: 12px;
 
-    &__accept-img {
-        display: inline;
-        margin-left: 25px;
-        vertical-align: middle;
-    }
+  &__accept-img {
+    display: inline;
+    margin-left: 25px;
+    vertical-align: middle;
+  }
 }

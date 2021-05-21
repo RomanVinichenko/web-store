@@ -47,6 +47,13 @@
     background-color: #fff;
   }
 
+  &__item-pic {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+  }
+
   &__item-title {
     margin: 35px 0 10px;
     font-size: 22px;
