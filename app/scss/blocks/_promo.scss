@@ -1,0 +1,56 @@
+.promo {
+  padding: 150px 0 160px;
+  text-align: center;
+  background-image: url("../images/promo-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__inner {
+    margin-left: auto;
+    width: 100%;
+    max-width: 570px;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+
+  &__clock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+  }
+
+  &__clock-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 10px 40px 0 rgba(187, 187, 187, 0.3);
+    text-align: center;
+    background-color: #fff;
+
+    span {
+      margin: 10px 0 7px;
+      font-size: 48px;
+      color: $title;
+
+      @extend %roboto-700;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 55px;
+    padding: 14px 27px;
+    border: 1px solid $accent;
+    text-transform: uppercase;
+    color: $title;
+  }
+}
