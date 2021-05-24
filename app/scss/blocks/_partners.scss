@@ -1,10 +1,10 @@
 .partners {
-padding-top: 75px;
+  padding-top: 75px;
 
-&__list {
-  height: 170px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+  }
 }
