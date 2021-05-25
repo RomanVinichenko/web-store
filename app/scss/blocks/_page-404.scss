@@ -1,0 +1,39 @@
+.page-404 {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    color: #28384f;
+
+    @extend %roboto-700;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+    width: 100%;
+    max-width: 470px;
+  }
+
+  &__link {
+    padding: 14px 35px;
+    text-transform: uppercase;
+    background-color: $accent;
+    color: #fff;
+
+    @extend %roboto-400;
+    box-shadow: 0px 5px 25px 0px rgba(254, 62, 87, 0.35);
+  }
+  
+}
