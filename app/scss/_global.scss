@@ -67,4 +67,33 @@ a {
   &__list {
     display: flex;
   }
+
+  &__item {
+    position: relative;
+    padding-right: 40px;
+    color: #727272;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 9px;
+      width: 9px;
+      height: 10px;
+      background-image: url("../images/login/login-arrow-right.svg");
+    }
+
+    &:last-child {
+      padding-right: 0;
+      color: $accent;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
 }
