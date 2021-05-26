@@ -1,0 +1,61 @@
+.shop {
+  padding: 120px 0 105px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    margin-right: 30px;
+    width: 370px;
+  }
+
+  .filter {
+    &__item {
+      margin-bottom: 40px;
+      padding: 35px 30px 40px;
+      border: 1px solid #ececec;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: $title;
+
+      @extend %roboto-400;
+    }
+  }
+
+  .filter-search {
+    &__form {
+      display: flex;
+    }
+
+    &__input {
+      padding: 0 5px 0 15px;
+      width: 260px;
+      height: 50px;
+      border: none;
+      background-color: $bg;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border: none;
+      text-align: center;
+      background-color: $accent;
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+      }
+    }
+  }
+}
