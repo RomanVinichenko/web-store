@@ -1,6 +1,16 @@
 $(function () {
-
-
+  $('.filter-price__input').ionRangeSlider({
+    type: 'Double',
+    prefix: '$',
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+  });
 
   $('.top-slider__inner').slick({
     dots: true,
@@ -10,20 +20,12 @@ $(function () {
     autoplaySpeed: 2000,
   });
 
-
-
   $('.star').rateYo({
     starWidth: '17px',
     normalFill: '#ccccce',
     ratedFill: '#ffc35b',
     readOnly: true,
   });
-
-
-  $('.filter-price').ionRangeSlider({
-    type:'Double',
-      });
-
 
   function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
@@ -66,6 +68,4 @@ $(function () {
 
   var deadline = $('.promo__clock').attr('data-time');
   initializeClock('promo__clock', deadline);
-
-
 });
