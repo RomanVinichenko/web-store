@@ -39,5 +39,17 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-done">
     <path d="M20.293 5.293L9 16.586l-4.293-4.293-1.414 1.414L9 19.414 21.707 6.707l-1.414-1.414z"></path>
   </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" id="angle-down">
+    <path d="M4.98 5a.728.728 0 01-.49-.179L.17 1.049a.567.567 0 010-.869.787.787 0 011 0l3.81 3.337L8.8.181a.771.771 0 01.99 0 .553.553 0 010 .868L5.48 4.821a.767.767 0 01-.5.179zm0 0"></path>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="grid">
+    <path d="M0 3.75h3.75V0H0v3.75zM5.625 15h3.75v-3.75h-3.75V15zM0 15h3.75v-3.75H0V15zm0-5.625h3.75v-3.75H0v3.75zm5.625 0h3.75v-3.75h-3.75v3.75zM11.25 0v3.75H15V0h-3.75zM5.625 3.75h3.75V0h-3.75v3.75zm5.625 5.625H15v-3.75h-3.75v3.75zm0 5.625H15v-3.75h-3.75V15z"></path>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" id="list">
+    <path d="M.007 0h4.422v4.172H.007V0zm5.828 0h14.159v4.172H5.835V0zM.007 5.413h4.422v4.172H.007V5.413zm5.828 0h14.159v4.172H5.835V5.413zM.007 10.827h4.422V15H.007v-4.171zm5.828 0h14.159V15H5.835v-4.171z"></path>
+  </symbol>
   
 </svg>

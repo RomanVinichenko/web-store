@@ -72,6 +72,7 @@
           </div>
         </div>
       </section>
+
       <section class="shop">
         <div class="container">
           <div class="shop__inner">
@@ -163,20 +164,182 @@
               </div>
 
               <div class="filter-size filter__item">
-                  <h3 class="filter__title">Size Filter</h3>
-                  <form  class="filter-size__form" action="#">
-                      <label class="filter-size__label">
-                          <input class="filter-size__input" type="checkbox">
-                          <span class="filter-size__checkbox"></span>
-                          X-small
-                      </label>
-                  </form>
-
+                <h3 class="filter__title">Size Filter</h3>
+                <form class="filter-size__form" action="#">
+                  <label class="filter-size__label">
+                    <input class="filter-size__input" type="checkbox" />
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">X-small</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input class="filter-size__input" type="checkbox" />
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">Small</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input class="filter-size__input" type="checkbox" />
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">Medium</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input class="filter-size__input" type="checkbox" />
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">Large</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input class="filter-size__input" type="checkbox" />
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">XXL</span>
+                  </label>
+                </form>
               </div>
 
+              <div class="filter-category filter__item">
+                <h3 class="filter__title">category</h3>
+                <form class="filter-category__form" action="#">
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <div class="filter-category__checkbox">
+                      <span>Woman</span>
+                      <span>48</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <div class="filter-category__checkbox">
+                      <span>Man</span>
+                      <span>30</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" checked />
+                    <div class="filter-category__checkbox">
+                      <span>Sale Products</span>
+                      <span>92</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <div class="filter-category__checkbox">
+                      <span>Fashion</span>
+                      <span>121</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <div class="filter-category__checkbox">
+                      <span>Hot Dresses</span>
+                      <span>52</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input class="filter-category__input" type="checkbox" />
+                    <div class="filter-category__checkbox">
+                      <span>Accessories</span>
+                      <span>88</span>
+                    </div>
+                  </label>
+                </form>
+              </div>
+
+              <div class="filter-popular filter__item">
+                <h3 class="filter__title">Popular Tags</h3>
+                <form class="filter-popular__form" action="#">
+                  <label class="filter-popular__label">
+                    <input class="filter-popular__input" type="checkbox" />
+                    <span class="filter-popular__checkbox"> Sweetshirt </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input class="filter-popular__input" type="checkbox" />
+                    <span class="filter-popular__checkbox"> Man Accessories </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input class="filter-popular__input" type="checkbox" />
+                    <span class="filter-popular__checkbox"> Fashion </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input class="filter-popular__input" type="checkbox" />
+                    <span class="filter-popular__checkbox"> Polo </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input class="filter-popular__input" type="checkbox" />
+                    <span class="filter-popular__checkbox"> T-shirt </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input class="filter-popular__input" type="checkbox" />
+                    <span class="filter-popular__checkbox"> Jewellery </span>
+                  </label>
+                </form>
+              </div>
             </div>
 
-            <div class="shop__content"></div>
+            <div class="shop-content">
+              <div class="shop-content__filter">
+                <div class="shop-content__filter-buttons">
+                  <span>View</span>
+                  <button class="shop-content__filter-btn shop-content__filter-btn--active">
+                    <svg width="15" height="15">
+                      <use xlink:href="images/sprite.svg#grid"></use>
+                    </svg>
+                  </button>
+                  <button class="shop-content__filter-btn">
+                    <svg width="20" height="15">
+                      <use xlink:href="images/sprite.svg#list"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="shop-content__filter-selects">
+                  <form class="shop-content__filter-form" action="#">
+                    <select class="shop-content__filter-sort select-style">
+                      <option value="">Sort by Default</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                    <select class="shop-content__filter-show select-style">
+                      <option value="">Show 9</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              <div class="shop-content__inner">
+                <div class="product-item">
+                  <div class="product-item__img-box">
+                    <img
+                      class="product-item__images"
+                      src="images/content/card-1.png"
+                      alt="product"
+                    />
+                    <div class="product-item__link-box">
+                      <a class="product-item__link" href="#">
+                        <svg class="product-item__pic">
+                          <use xlink:href="images/sprite.svg#1"></use>
+                        </svg>
+                      </a>
+                      <a class="product-item__link product-item__link--line" href="#">
+                        <svg class="product-item__pic">
+                          <use xlink:href="images/sprite.svg#2"></use>
+                        </svg>
+                      </a>
+                      <a class="product-item__link" href="#">
+                        <svg class="product-item__pic">
+                          <use xlink:href="images/sprite.svg#3"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <h4 class="product-item__title">White Polo Men`s T-shirt</h4>
+                  <div class="product-item__price">
+                    <div class="product-item__new-price">$34.00</div>
+                    <div class="product-item__old-price">$27.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -371,6 +534,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
+
     <script src="js/index.min.js"></script>
   </body>
 </html>

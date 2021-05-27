@@ -1,4 +1,14 @@
 $(function () {
+
+  $('.select-style').styler();
+
+  $('.star').rateYo({
+    starWidth: '17px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffc35b',
+    readOnly: true,
+  });
+
   $('.filter-price__input').ionRangeSlider({
     type: 'Double',
     prefix: '$',
@@ -20,12 +30,7 @@ $(function () {
     autoplaySpeed: 2000,
   });
 
-  $('.star').rateYo({
-    starWidth: '17px',
-    normalFill: '#ccccce',
-    ratedFill: '#ffc35b',
-    readOnly: true,
-  });
+
 
   function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
