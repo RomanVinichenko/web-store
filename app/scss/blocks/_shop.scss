@@ -118,53 +118,71 @@
 
 .filter-color {
   &__label {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ececec;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ececec;
     cursor: pointer;
+
     & + .filter-color__label {
       padding-top: 20px;
     }
+
     &:last-child {
-      border-bottom: none;
       padding-bottom: 0;
+      border-bottom: none;
     }
   }
-  
-  &__input {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect (0 0 0 0);
-    position: absolute;
 
+  &__input {
     &:checked + .filter-color__checkbox {
       background-image: url("../images/icons/icon-done.svg");
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
     }
+
+    @extend %checkbox-hidden;
   }
-  
+
   &__checkbox {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -16px;
     width: 16px;
     height: 16px;
-    position: absolute;
-    margin-left: -16px;
-    margin-top: 7px;
   }
 
   &__checkbox--blue {
     background-color: #00aeef;
-  }&__checkbox--red {
+  }
+
+  &__checkbox--red {
     background-color: #f52574;
-  }&__checkbox--green {
+  }
+
+  &__checkbox--green {
     background-color: #24d4ac;
-  }&__checkbox--orange {
+  }
+
+  &__checkbox--orange {
     background-color: #ff7e00;
-  }&__checkbox--black {
+  }
+
+  &__checkbox--black {
     background-color: #000;
-  }&__checkbox--purple {
+  }
+
+  &__checkbox--purple {
     background-color: #923899;
+  }
+}
+
+.filter-size {
+  &__input {
+    @extend %checkbox-hidden;
+  }
+
+  &__checkbox {
+
   }
 }
