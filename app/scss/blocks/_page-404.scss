@@ -30,7 +30,7 @@
     padding: 14px 35px;
     box-shadow: 0 5px 25px 0 rgba(254, 62, 87, 0.35);
     text-transform: uppercase;
-    color: #fff;
+    color: $wh;
     background-color: $accent;
 
     @extend %roboto-400;

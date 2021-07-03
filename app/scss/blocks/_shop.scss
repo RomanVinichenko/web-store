@@ -54,7 +54,7 @@
       svg {
         width: 20px;
         height: 20px;
-        fill: #fff;
+        fill: $wh;
       }
     }
   }
@@ -92,7 +92,7 @@
   width: 30px;
   height: 30px;
   box-shadow: 0 0 13px 0 rgba(90, 90, 90, 0.2);
-  background-color: #fff;
+  background-color: $wh;
 }
 
 .irs--flat .irs-handle > i:first-child {
@@ -179,17 +179,17 @@
 
 .filter-size {
   &__label {
+    display: block;
     margin-bottom: 20px;
     padding-left: 35px;
-    display: block;
   }
 
   &__input {
     &:checked + .filter-size__checkbox {
-      background-image: url("../images/icons/icon-done-accent.svg");
-      background-repeat: no-repeat;
-      background-position: center;
       border: 1px solid $accent;
+      background-image: url("../images/icons/icon-done-accent.svg");
+      background-position: center;
+      background-repeat: no-repeat;
 
       & + .filter-size__text {
         color: $accent;
@@ -212,9 +212,9 @@
 
 .filter-category {
   &__label {
+    display: block;
     margin-bottom: 15px;
     cursor: pointer;
-    display: block;
 
     &:last-child {
       margin-bottom: 0;
@@ -222,40 +222,40 @@
   }
 
   &__input {
-    @extend %checkbox-hidden;
     &:checked + .filter-category__checkbox {
+      color: $wh;
       background-color: $accent;
-      color: #fff;
     }
+
+    @extend %checkbox-hidden;
   }
 
   &__checkbox {
-    background-color: #f6f6f6;
-    color: $title;
     display: flex;
     justify-content: space-between;
     padding: 16px 20px;
+    color: $title;
+    background-color: #f6f6f6;
   }
 }
 
 .filter-popular {
   &__label {
     display: inline-block;
-    margin-bottom: 20px;
     margin-right: 8px;
-
+    margin-bottom: 20px;
     padding: 10px 0;
     cursor: pointer;
   }
 
   &__input {
-    @extend %checkbox-hidden;
     &:checked + .filter-popular__checkbox {
-      background-color: $accent;
-      color: #fff;
       border-color: $accent;
-
+      color: $wh;
+      background-color: $accent;
     }
+
+    @extend %checkbox-hidden;
   }
 
   &__checkbox {
@@ -266,13 +266,25 @@
 
 .shop-content {
   width: 100%;
-  &__filter {
-    border: 1px solid #ececec;
-    padding: 20px 25px 20px 30px;
-    margin-bottom: 40px;
+
+  &__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+
+    .product-item {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__filter {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px 25px 20px 30px;
+    border: 1px solid #ececec;
   }
 
   &__filter-buttons {
@@ -280,39 +292,42 @@
     align-items: center;
   }
 
-&__filter-btn {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  margin-left: 15px;
-  line-height: 0;
-  cursor: pointer;
-  svg {
-    fill: #8d8d8d;
-  }
+  &__filter-btn {
+    margin-left: 15px;
+    padding: 0;
+    outline: none;
+    border: none;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
 
-  &.shop-content__filter-btn--active {
     svg {
-      fill: $accent;
+      fill: #8d8d8d;
+    }
+
+    &.shop-content__filter-btn--active {
+      svg {
+        fill: $accent;
+      }
     }
   }
 }
-}
 
 .jq-selectbox__select {
-  height: 32px;
-  padding: 0 30px 0 0;
   margin-left: 30px;
+  padding: 0 30px 0 0;
+  height: 32px;
   border: none;
-  background: transparent;
   box-shadow: none;
-  @extend %quicksand-500;
-  color: $default;
   text-shadow: none;
+  color: $default;
+  background: transparent;
 
   &:hover {
     background: transparent;
   }
+
+  @extend %quicksand-500;
 }
 
 .jq-selectbox__trigger {
@@ -321,12 +336,10 @@
 
 .jq-selectbox__trigger-arrow {
   position: absolute;
-  top: 12px;
   right: 12px;
+  top: 12px;
   width: 10px;
   height: 5px;
   border: none;
   background-image: url("../images/icons/shop/angle-down.svg");
 }
-
-
