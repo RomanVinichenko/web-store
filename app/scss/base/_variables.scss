@@ -30,11 +30,13 @@ $wh: #fff;
   text-transform: uppercase;
   color: $wh;
   background-color: $accent;
+  cursor: pointer;
 
   @extend %roboto-400;
 }
 
-%checkbox-hidden {
+%checkbox-hidden,
+%radio-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
